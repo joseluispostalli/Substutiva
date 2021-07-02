@@ -3,16 +3,19 @@ package player;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import entidades.Autor;
-import entidades.Musica;
-
-
+import entidades.Musica.*;
+import entidades.Autor.*;
+/**
+ *
+ * @author ferna
+ */
 public class Player extends javax.swing.JFrame {
+    int i =0;
     
     
+        
     public Player() {
-       
-     
+        initComponents();
     }
 
     @SuppressWarnings("unchecked")
@@ -157,15 +160,19 @@ public class Player extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPlayActionPerformed
 
     private void btnPlayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMouseClicked
-
+       this.lblNomeMusica.setText("cuido");
+       this.btnPlay.setText("pause");
+       
     }//GEN-LAST:event_btnPlayMouseClicked
 
     private void btnAumentaVolumeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAumentaVolumeMouseClicked
-        
+     this.lblVolume.setText(this.i);
+     double vol = Double.par   
+     
     }//GEN-LAST:event_btnAumentaVolumeMouseClicked
 
     private void btnDiminuiVolumeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDiminuiVolumeMouseClicked
-  
+      this.lblVolume.setText("");
     }//GEN-LAST:event_btnDiminuiVolumeMouseClicked
 
     private void btnAnteriorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnteriorMouseClicked
@@ -180,7 +187,6 @@ public class Player extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

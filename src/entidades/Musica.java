@@ -8,9 +8,7 @@ public final class Musica {
     private Autor autor;
     private String genero;
     
-    Musica musica1 = new Musica("jarangostango",'115' ,"Armandinho" ,"pop");
 
-    
     
     public Musica(){}
     
