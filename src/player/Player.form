@@ -112,18 +112,28 @@
         <Property name="text" type="java.lang.String" value="Plause/Play"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnPlayMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPlayActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnProxima">
       <Properties>
         <Property name="text" type="java.lang.String" value="Pr&#xf3;xima"/>
         <Property name="toolTipText" type="java.lang.String" value="Pr&#xf3;xima m&#xfa;sica"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProximaMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnAnterior">
       <Properties>
         <Property name="text" type="java.lang.String" value="Anterior"/>
         <Property name="toolTipText" type="java.lang.String" value="Voltar &#xe0; m&#xfa;sica anterior"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAnteriorMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblVolume">
       <Properties>
@@ -162,11 +172,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAumentaVolumeMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnDiminuiVolume">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDiminuiVolumeMouseClicked"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

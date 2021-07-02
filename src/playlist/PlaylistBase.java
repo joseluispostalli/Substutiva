@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public abstract class PlaylistBase {
     
-    private ArrayList<Musica> playlist;
+    private final ArrayList<Musica> playlist;
     private final String genero;
     
     public PlaylistBase(String genero) {
